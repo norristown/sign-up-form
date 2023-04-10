@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Mono&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <div class="container">
         <div class="left">
             <div class="image-container">
-                <img class="background" src="corgipoo.png" alt="">
+                <img class="background" src="cat.jpg" alt="">
                 <div class="overlay">
                     <div class="text">
                         <img class="odin" src="odin-lined.png" alt="">
@@ -33,9 +33,9 @@
                 <div class="text-top">Give me your name and email address; and a check for one <strong>BILLION</strong>
                     dollars.</div>
                 <br>
-                <div class="text-bottom">You absolutely <em>know</em> you want to.</div>
+                <div class="text-bottom">You <strong>will</strong> S U B M I T.</div>
             </div>
-            <form action="#" method="get">
+            <form action="" method="post">
                 <div class="middle">
                     <div class="form-header"><strong>Sign Up Here</strong></div>
                     <div class="left-form">
@@ -45,6 +45,7 @@
                         <input type="email" id="email" name="email" placeholder="Your email"><br>
                         <label for="password">PASSWORD</label><br>
                         <input type="password" id="password" name="password" placeholder="Create a password"><br>
+                        <div class="error"></div>
                     </div>
                     <div class="right-form">
                         <label for="lname">LAST NAME</label><br>
@@ -53,11 +54,13 @@
                         <input type="email" id="confirm-email" name="confirm-email"><br>
                         <label for="confirm-password">CONFIRM PASSWORD</label><br>
                         <input type="password" id="confirm-password" name="confirm-password">
+                        
                     </div>
                 </div>
                 <div class="bottom">
                     <button class="myButton" type="submit">Create Account</button>
                     <p>Already have an account? <a href="">Log In</a></p>
+                    <h3 class="buttonOutput"></h3>
                 </div>
             </form>
 
